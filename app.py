@@ -21,7 +21,6 @@ def get_compliment():
     num_compliments = int(request.args.get('num_compliments'))
     debug_str = ' '.join(map(str, ['num_compliments:', num_compliments, 'type:', type(num_compliments)]))
     print(debug_str)
-    # return debug_str
     compliments_to_show = sample(compliments, num_compliments)
     print(compliments_to_show)
 
